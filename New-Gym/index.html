@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./Script.js"></script>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header>
+            <h1>New Gym</h1>
+        </header>
+        <article>
+            <select name="actividades" id="actividades">
+                <option value="nada" selected="selected" disabled>Elige una actividad</option>
+                <option value="yoga">Yoga</option>
+                <option value="zumba">Zumba</option>
+                <option value="karate">Karate</option>
+                <option value="pesas"> Entrenamineto con Pesas</option>
+                <option value="pilates">Pilates</option>
+                <option value="cardioBox">CardioBox</option>
+            </select>
+            <select name="cuotas" id="cuotas">
+                <option value="nada" selected="selected" disabled>¿Cómo quieres pagar tus cuotas?</option>
+                <option value="mensual">Mensual</option>
+                <option value="trimestral">Trimestral</option>
+                <option value="semestral"> Semestral</option>
+                <option value="anual">Anual</option>
+            </select>
+            <div id="error"><p>Todos los cambios son obligatorios</p></div>
+        </article>
+        <input type="button" id="agregarAlCarrito" value="Añadir al carrito">
+        <div id="carrito">
+            <p>
+                <span>Actividad</span>
+                <span>Cuotas</span>
+                <span>Precio</span>
+                
+            </p>
+            <input type="button" value="Calcular total"  id="calcular">
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+              </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
